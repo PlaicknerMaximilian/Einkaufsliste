@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/simpleListView"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/button"
+        android:divider="@color/material_blue_grey_800"
+        android:footerDividersEnabled="false"
+        android:visibility="visible"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:text="Add New Item"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/button2"
+        android:onClick="addItems"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:text="Einkaufsliste erzeugen" />
+
+    <ListView
+        android:id="@+id/einkaufslist"
+        android:layout_width="fill_parent"
+        android:layout_height="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/button"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/button2"
+        android:visibility="invisible"
+        android:text="Fertig"
+        />
+
+</RelativeLayout>
